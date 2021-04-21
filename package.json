@@ -1,0 +1,25 @@
+{
+  "name": "schemaorgjsonschema",
+  "version": "12.0.0",
+  "description": "Schema.Org types in JSON Schema format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikeRalphson/schemaOrgJSONSchema.git"
+  },
+  "keywords": [
+    "jsonschema",
+    "json-schema",
+    "schema.org",
+    "schema-org"
+  ],
+  "author": "Mike Ralphson",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/MikeRalphson/schemaOrgJSONSchema/issues"
+  },
+  "homepage": "https://github.com/MikeRalphson/schemaOrgJSONSchema#readme"
+}
