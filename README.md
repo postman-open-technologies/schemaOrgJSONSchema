@@ -11,7 +11,7 @@ This repository includes a canonical plain-JSON serialisation for each of the sc
 ## Usage:
 
 ```js
-const schemaOrg = require('schemaorgjsonschema');
+const schemaOrg = require('@postman-open-tech/schemaorgjsonschema');
 
 const bookSchema = schemaOrg.getSchema('Book');
 ```
