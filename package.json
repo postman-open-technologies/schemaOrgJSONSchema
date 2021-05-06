@@ -1,5 +1,8 @@
 {
   "name": "@postman-open-tech/schemaorgjsonschema",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "12.0.0",
   "description": "Schema.Org types in JSON Schema format",
   "main": "index.js",
