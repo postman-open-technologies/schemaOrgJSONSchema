@@ -1,5 +1,5 @@
 {
-  "name": "schemaorgjsonschema",
+  "name": "@postman-open-tech/schemaorgjsonschema",
   "version": "12.0.0",
   "description": "Schema.Org types in JSON Schema format",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikeRalphson/schemaOrgJSONSchema.git"
+    "url": "git+https://github.com/postman-open-technologies/schemaOrgJSONSchema.git"
   },
   "keywords": [
     "jsonschema",
@@ -17,9 +17,9 @@
     "schema-org"
   ],
   "author": "Mike Ralphson",
-  "license": "CC-BY-SA-4.0",
+  "license": "CC-BY-SA-4.0 AND MIT",
   "bugs": {
-    "url": "https://github.com/MikeRalphson/schemaOrgJSONSchema/issues"
+    "url": "https://github.com/postman-open-technologies/schemaOrgJSONSchema/issues"
   },
-  "homepage": "https://github.com/MikeRalphson/schemaOrgJSONSchema#readme"
+  "homepage": "https://github.com/postman-open-technologies/schemaOrgJSONSchema#readme"
 }
