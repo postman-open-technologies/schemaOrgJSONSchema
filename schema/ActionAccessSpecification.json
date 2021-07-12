@@ -83,11 +83,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "time"
         },
         {
           "type": "string",
-          "format": "time"
+          "format": "date"
         },
         {
           "type": "string",
@@ -101,11 +101,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "time"
         },
         {
           "type": "string",
-          "format": "time"
+          "format": "date"
         },
         {
           "type": "string",
@@ -125,10 +125,10 @@
           "$ref": "Thing.json#/$defs/possibleRef"
         },
         {
-          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
         }
       ]
     },

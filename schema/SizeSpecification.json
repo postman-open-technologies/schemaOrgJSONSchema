@@ -100,10 +100,10 @@
       "description": "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
       "anyOf": [
         {
-          "$ref": "GenderType.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "GenderType.json#/$defs/possibleRef"
         }
       ]
     }

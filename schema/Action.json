@@ -150,13 +150,13 @@
       "description": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
       "anyOf": [
         {
-          "$ref": "Place.json#/$defs/possibleRef"
+          "$ref": "VirtualLocation.json#/$defs/possibleRef"
         },
         {
           "$ref": "PostalAddress.json#/$defs/possibleRef"
         },
         {
-          "$ref": "VirtualLocation.json#/$defs/possibleRef"
+          "$ref": "Place.json#/$defs/possibleRef"
         },
         {
           "type": "string"

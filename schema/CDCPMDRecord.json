@@ -358,11 +358,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     }

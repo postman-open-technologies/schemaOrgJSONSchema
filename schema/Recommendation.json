@@ -71,10 +71,10 @@
           "$ref": "Thing.json#/$defs/possibleRef"
         },
         {
-          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
         }
       ]
     }

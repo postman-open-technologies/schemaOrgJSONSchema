@@ -8,6 +8,9 @@
   },
   "type": "object",
   "properties": {
+    "actor": {
+      "$ref": "Person.json#/$defs/possibleRefArray"
+    },
     "webFeed": {
       "$ref": "#/$defs/webFeed"
     }

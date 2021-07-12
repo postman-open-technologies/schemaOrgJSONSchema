@@ -136,10 +136,10 @@
           "$ref": "Thing.json#/$defs/possibleRef"
         },
         {
-          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
         }
       ]
     },
@@ -178,11 +178,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     },

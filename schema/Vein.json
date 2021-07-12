@@ -67,10 +67,10 @@
       "description": "The anatomical or organ system drained by this vessel; generally refers to a specific part of an organ.",
       "anyOf": [
         {
-          "$ref": "AnatomicalSystem.json#/$defs/possibleRef"
+          "$ref": "AnatomicalStructure.json#/$defs/possibleRef"
         },
         {
-          "$ref": "AnatomicalStructure.json#/$defs/possibleRef"
+          "$ref": "AnatomicalSystem.json#/$defs/possibleRef"
         }
       ]
     }

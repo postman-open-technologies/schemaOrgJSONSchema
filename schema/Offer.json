@@ -86,6 +86,19 @@
     "hasMeasurement": {
       "$ref": "QuantitativeValue.json#/$defs/possibleRefArray"
     },
+    "hasMerchantReturnPolicy": {
+      "oneOf": [
+        {
+          "$ref": "MerchantReturnPolicy.json#/$defs/possibleRef"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "MerchantReturnPolicy.json#/$defs/possibleRef"
+          }
+        }
+      ]
+    },
     "includesObject": {
       "$ref": "TypeAndQuantityNode.json#/$defs/possibleRefArray"
     },
@@ -219,10 +232,10 @@
       "description": "The payment method(s) accepted by seller for this offer.",
       "anyOf": [
         {
-          "$ref": "PaymentMethod.json#/$defs/possibleRef"
+          "$ref": "LoanOrCredit.json#/$defs/possibleRef"
         },
         {
-          "$ref": "LoanOrCredit.json#/$defs/possibleRef"
+          "$ref": "PaymentMethod.json#/$defs/possibleRef"
         }
       ]
     },
@@ -234,10 +247,10 @@
           "$ref": "Place.json#/$defs/possibleRef"
         },
         {
-          "type": "string"
+          "$ref": "GeoShape.json#/$defs/possibleRef"
         },
         {
-          "$ref": "GeoShape.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
           "$ref": "AdministrativeArea.json#/$defs/possibleRef"
@@ -250,11 +263,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "time"
         },
         {
           "type": "string",
-          "format": "time"
+          "format": "date"
         },
         {
           "type": "string",
@@ -268,11 +281,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "time"
         },
         {
           "type": "string",
-          "format": "time"
+          "format": "date"
         },
         {
           "type": "string",
@@ -292,10 +305,10 @@
           "$ref": "Thing.json#/$defs/possibleRef"
         },
         {
-          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
         }
       ]
     },
@@ -362,22 +375,22 @@
           "$ref": "Trip.json#/$defs/possibleRef"
         },
         {
-          "$ref": "AggregateOffer.json#/$defs/possibleRef"
-        },
-        {
           "$ref": "MenuItem.json#/$defs/possibleRef"
-        },
-        {
-          "$ref": "Service.json#/$defs/possibleRef"
-        },
-        {
-          "$ref": "Event.json#/$defs/possibleRef"
         },
         {
           "$ref": "Product.json#/$defs/possibleRef"
         },
         {
+          "$ref": "AggregateOffer.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "Event.json#/$defs/possibleRef"
+        },
+        {
           "$ref": "CreativeWork.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "Service.json#/$defs/possibleRef"
         }
       ]
     },
@@ -386,10 +399,10 @@
       "description": "Length of the lease for some Accommodation, either particular to some Offer or in some cases intrinsic to the property.",
       "anyOf": [
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Duration.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Duration.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         }
       ]
     },
@@ -461,11 +474,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     },
@@ -475,11 +488,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     }

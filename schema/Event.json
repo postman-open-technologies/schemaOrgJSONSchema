@@ -281,10 +281,10 @@
       "description": "The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage.\n                 Supersedes \n                \n    \n    \n    language.",
       "anyOf": [
         {
-          "$ref": "Language.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "Language.json#/$defs/possibleRef"
         }
       ]
     },
@@ -298,13 +298,13 @@
       "description": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
       "anyOf": [
         {
-          "$ref": "Place.json#/$defs/possibleRef"
+          "$ref": "VirtualLocation.json#/$defs/possibleRef"
         },
         {
           "$ref": "PostalAddress.json#/$defs/possibleRef"
         },
         {
-          "$ref": "VirtualLocation.json#/$defs/possibleRef"
+          "$ref": "Place.json#/$defs/possibleRef"
         },
         {
           "type": "string"

@@ -178,10 +178,10 @@
           "$ref": "Place.json#/$defs/possibleRef"
         },
         {
-          "type": "string"
+          "$ref": "GeoShape.json#/$defs/possibleRef"
         },
         {
-          "$ref": "GeoShape.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
           "$ref": "AdministrativeArea.json#/$defs/possibleRef"
@@ -198,10 +198,10 @@
       "description": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
       "anyOf": [
         {
-          "$ref": "Brand.json#/$defs/possibleRef"
+          "$ref": "Organization.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Organization.json#/$defs/possibleRef"
+          "$ref": "Brand.json#/$defs/possibleRef"
         }
       ]
     },
@@ -229,10 +229,10 @@
           "$ref": "Thing.json#/$defs/possibleRef"
         },
         {
-          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "PhysicalActivityCategory.json#/$defs/possibleRef"
         }
       ]
     },
@@ -241,10 +241,10 @@
       "description": "A pointer to another, somehow related product (or multiple products).",
       "anyOf": [
         {
-          "$ref": "Product.json#/$defs/possibleRef"
+          "$ref": "Service.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Service.json#/$defs/possibleRef"
+          "$ref": "Product.json#/$defs/possibleRef"
         }
       ]
     },
@@ -253,10 +253,10 @@
       "description": "A pointer to another, functionally similar product (or multiple products).",
       "anyOf": [
         {
-          "$ref": "Product.json#/$defs/possibleRef"
+          "$ref": "Service.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Service.json#/$defs/possibleRef"
+          "$ref": "Product.json#/$defs/possibleRef"
         }
       ]
     },
@@ -265,11 +265,11 @@
       "description": "An associated logo.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "ImageObject.json#/$defs/possibleRef"
         },
         {
-          "$ref": "ImageObject.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         }
       ]
     },

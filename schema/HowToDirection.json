@@ -148,10 +148,10 @@
       "description": "A sub property of instrument. An object used (but not consumed) when performing instructions or a direction.",
       "anyOf": [
         {
-          "$ref": "HowToTool.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "HowToTool.json#/$defs/possibleRef"
         }
       ]
     }

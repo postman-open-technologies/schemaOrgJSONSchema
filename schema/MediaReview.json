@@ -20,6 +20,32 @@
           }
         }
       ]
+    },
+    "originalMediaContextDescription": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/originalMediaContextDescription"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/originalMediaContextDescription"
+          }
+        }
+      ]
+    },
+    "originalMediaLink": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/originalMediaLink"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/originalMediaLink"
+          }
+        }
+      ]
     }
   },
   "$defs": {
@@ -63,6 +89,27 @@
           "items": {
             "$ref": "#/$defs/possibleRef"
           }
+        }
+      ]
+    },
+    "originalMediaContextDescription": {
+      "title": "Original Media Context Description",
+      "description": "Describes, in a MediaReview when dealing with DecontextualizedContent, background information that can contribute to better interpretation of the MediaObject.",
+      "type": "string"
+    },
+    "originalMediaLink": {
+      "title": "Original Media Link",
+      "description": "Link to the page containing an original version of the content, or directly to an online copy of the original MediaObject content, e.g. video file.",
+      "anyOf": [
+        {
+          "$ref": "MediaObject.json#/$defs/possibleRef"
+        },
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "$ref": "WebPage.json#/$defs/possibleRef"
         }
       ]
     }

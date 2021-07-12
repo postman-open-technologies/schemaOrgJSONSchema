@@ -70,10 +70,10 @@
       "description": "The position of an item in a series or sequence of items.",
       "anyOf": [
         {
-          "type": "string"
+          "type": "integer"
         },
         {
-          "type": "integer"
+          "type": "string"
         }
       ]
     }

@@ -67,10 +67,10 @@
           "$ref": "BedDetails.json#/$defs/possibleRef"
         },
         {
-          "$ref": "BedType.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "BedType.json#/$defs/possibleRef"
         }
       ]
     }

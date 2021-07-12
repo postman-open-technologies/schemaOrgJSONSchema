@@ -76,11 +76,11 @@
       "description": "An associated logo.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "ImageObject.json#/$defs/possibleRef"
         },
         {
-          "$ref": "ImageObject.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         }
       ]
     },

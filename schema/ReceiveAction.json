@@ -70,10 +70,10 @@
           "$ref": "Person.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Audience.json#/$defs/possibleRef"
+          "$ref": "Organization.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Organization.json#/$defs/possibleRef"
+          "$ref": "Audience.json#/$defs/possibleRef"
         }
       ]
     }

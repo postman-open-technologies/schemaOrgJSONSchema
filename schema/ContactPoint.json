@@ -97,10 +97,10 @@
           "$ref": "Place.json#/$defs/possibleRef"
         },
         {
-          "type": "string"
+          "$ref": "GeoShape.json#/$defs/possibleRef"
         },
         {
-          "$ref": "GeoShape.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
           "$ref": "AdministrativeArea.json#/$defs/possibleRef"

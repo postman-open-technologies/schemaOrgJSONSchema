@@ -101,11 +101,11 @@
       "description": "Knowledge, skill, ability or personal attribute that must be demonstrated by a person or other entity in order to do something such as earn an Educational Occupational Credential or understand a LearningResource.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "DefinedTerm.json#/$defs/possibleRef"
         },
         {
-          "$ref": "DefinedTerm.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         },
         {
           "type": "string"
@@ -117,11 +117,11 @@
       "description": "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "DefinedTerm.json#/$defs/possibleRef"
         },
         {
-          "$ref": "DefinedTerm.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         },
         {
           "type": "string"

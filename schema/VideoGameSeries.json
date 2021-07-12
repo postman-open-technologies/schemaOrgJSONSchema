@@ -149,14 +149,14 @@
       "description": "Real or fictional location of the game (or part of game).",
       "anyOf": [
         {
-          "$ref": "Place.json#/$defs/possibleRef"
-        },
-        {
           "type": "string",
           "format": "uri"
         },
         {
           "$ref": "PostalAddress.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "Place.json#/$defs/possibleRef"
         }
       ]
     },

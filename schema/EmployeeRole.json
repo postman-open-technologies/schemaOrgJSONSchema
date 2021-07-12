@@ -64,10 +64,10 @@
       "description": "The base salary of the job or of an employee in an EmployeeRole.",
       "anyOf": [
         {
-          "$ref": "PriceSpecification.json#/$defs/possibleRef"
+          "type": "number"
         },
         {
-          "type": "number"
+          "$ref": "PriceSpecification.json#/$defs/possibleRef"
         },
         {
           "$ref": "MonetaryAmount.json#/$defs/possibleRef"

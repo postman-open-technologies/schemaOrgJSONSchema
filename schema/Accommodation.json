@@ -184,10 +184,10 @@
       "description": "Length of the lease for some Accommodation, either particular to some Offer or in some cases intrinsic to the property.",
       "anyOf": [
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Duration.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Duration.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         }
       ]
     },

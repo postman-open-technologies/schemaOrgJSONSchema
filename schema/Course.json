@@ -116,10 +116,10 @@
           "format": "uri"
         },
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     },
@@ -128,10 +128,10 @@
       "description": "The number of credits or units awarded by a Course or required to complete an EducationalOccupationalProgram.",
       "anyOf": [
         {
-          "$ref": "StructuredValue.json#/$defs/possibleRef"
+          "type": "integer"
         },
         {
-          "type": "integer"
+          "$ref": "StructuredValue.json#/$defs/possibleRef"
         }
       ]
     },
@@ -144,10 +144,10 @@
           "format": "uri"
         },
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     }

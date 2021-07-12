@@ -113,10 +113,10 @@
           "$ref": "MedicalEnumeration.json#/$defs/possibleRef"
         },
         {
-          "$ref": "DrugLegalStatus.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "DrugLegalStatus.json#/$defs/possibleRef"
         }
       ]
     },

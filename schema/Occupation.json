@@ -97,10 +97,10 @@
       "description": "Educational background needed for the position or Occupation.",
       "anyOf": [
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     },
@@ -109,10 +109,10 @@
       "description": "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
       "anyOf": [
         {
-          "$ref": "MonetaryAmountDistribution.json#/$defs/possibleRef"
+          "type": "number"
         },
         {
-          "type": "number"
+          "$ref": "MonetaryAmountDistribution.json#/$defs/possibleRef"
         },
         {
           "$ref": "MonetaryAmount.json#/$defs/possibleRef"
@@ -124,10 +124,10 @@
       "description": "Description of skills and experience needed for the position or Occupation.",
       "anyOf": [
         {
-          "$ref": "OccupationalExperienceRequirements.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "OccupationalExperienceRequirements.json#/$defs/possibleRef"
         }
       ]
     },
@@ -142,10 +142,10 @@
       "description": "Specific qualifications required for this role or Occupation.",
       "anyOf": [
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     },

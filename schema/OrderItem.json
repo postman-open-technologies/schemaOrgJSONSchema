@@ -86,13 +86,13 @@
       "description": "The item ordered.",
       "anyOf": [
         {
-          "$ref": "Product.json#/$defs/possibleRef"
+          "$ref": "OrderItem.json#/$defs/possibleRef"
         },
         {
           "$ref": "Service.json#/$defs/possibleRef"
         },
         {
-          "$ref": "OrderItem.json#/$defs/possibleRef"
+          "$ref": "Product.json#/$defs/possibleRef"
         }
       ]
     }

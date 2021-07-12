@@ -30,6 +30,19 @@
     "datePosted": {
       "$ref": "#/$defs/datePosted"
     },
+    "directApply": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/directApply"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/directApply"
+          }
+        }
+      ]
+    },
     "educationRequirements": {
       "$ref": "#/$defs/educationRequirements"
     },
@@ -249,10 +262,10 @@
       "description": "The base salary of the job or of an employee in an EmployeeRole.",
       "anyOf": [
         {
-          "$ref": "PriceSpecification.json#/$defs/possibleRef"
+          "type": "number"
         },
         {
-          "type": "number"
+          "$ref": "PriceSpecification.json#/$defs/possibleRef"
         },
         {
           "$ref": "MonetaryAmount.json#/$defs/possibleRef"
@@ -265,23 +278,28 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
+    },
+    "directApply": {
+      "title": "Direct Apply",
+      "description": "Indicates whether an url that is associated with a JobPosting enables direct application for the job, via the posting website. A job posting is considered to have directApply of True if an application process for the specified job can be directly initiated via the url(s) given (noting that e.g. multiple internet domains might nevertheless be involved at an implementation level). A value of False is appropriate if there is no clear path to applying directly online for the specified job, navigating directly from the JobPosting url(s) supplied.",
+      "type": "boolean"
     },
     "educationRequirements": {
       "title": "Education Requirements",
       "description": "Educational background needed for the position or Occupation.",
       "anyOf": [
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     },
@@ -305,10 +323,10 @@
       "description": "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
       "anyOf": [
         {
-          "$ref": "MonetaryAmountDistribution.json#/$defs/possibleRef"
+          "type": "number"
         },
         {
-          "type": "number"
+          "$ref": "MonetaryAmountDistribution.json#/$defs/possibleRef"
         },
         {
           "$ref": "MonetaryAmount.json#/$defs/possibleRef"
@@ -325,10 +343,10 @@
       "description": "Description of skills and experience needed for the position or Occupation.",
       "anyOf": [
         {
-          "$ref": "OccupationalExperienceRequirements.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "OccupationalExperienceRequirements.json#/$defs/possibleRef"
         }
       ]
     },
@@ -404,10 +422,10 @@
       "description": "Specific qualifications required for this role or Occupation.",
       "anyOf": [
         {
-          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "EducationalOccupationalCredential.json#/$defs/possibleRef"
         }
       ]
     },
@@ -483,11 +501,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     },

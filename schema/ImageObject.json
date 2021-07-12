@@ -11,6 +11,19 @@
     "caption": {
       "$ref": "#/$defs/caption"
     },
+    "embeddedTextCaption": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/embeddedTextCaption"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/embeddedTextCaption"
+          }
+        }
+      ]
+    },
     "exifData": {
       "$ref": "#/$defs/exifData"
     },
@@ -76,6 +89,11 @@
           "type": "string"
         }
       ]
+    },
+    "embeddedTextCaption": {
+      "title": "Embedded Text Caption",
+      "description": "Represents textual captioning from a MediaObject, e.g. text of a 'meme'.",
+      "type": "string"
     },
     "exifData": {
       "title": "Exif Data",

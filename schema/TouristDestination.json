@@ -84,10 +84,10 @@
       "description": "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc.",
       "anyOf": [
         {
-          "$ref": "Audience.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "Audience.json#/$defs/possibleRef"
         }
       ]
     }

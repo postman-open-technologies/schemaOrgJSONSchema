@@ -85,28 +85,28 @@
       "description": "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
       "anyOf": [
         {
-          "$ref": "DefinedTerm.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QualitativeValue.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
           "$ref": "MeasurementTypeEnumeration.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "StructuredValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Enumeration.json#/$defs/possibleRef"
+          "$ref": "QualitativeValue.json#/$defs/possibleRef"
         },
         {
           "$ref": "PropertyValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "StructuredValue.json#/$defs/possibleRef"
+          "$ref": "Enumeration.json#/$defs/possibleRef"
         },
         {
-          "type": "string"
+          "$ref": "DefinedTerm.json#/$defs/possibleRef"
         }
       ]
     }

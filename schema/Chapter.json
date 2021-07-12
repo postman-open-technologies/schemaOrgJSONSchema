@@ -77,10 +77,10 @@
       "description": "The page on which the work ends; for example \"138\" or \"xvi\".",
       "anyOf": [
         {
-          "type": "string"
+          "type": "integer"
         },
         {
-          "type": "integer"
+          "type": "string"
         }
       ]
     },
@@ -89,10 +89,10 @@
       "description": "The page on which the work starts; for example \"135\" or \"xiii\".",
       "anyOf": [
         {
-          "type": "string"
+          "type": "integer"
         },
         {
-          "type": "integer"
+          "type": "string"
         }
       ]
     },

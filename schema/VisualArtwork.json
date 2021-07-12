@@ -155,10 +155,10 @@
       "description": "The depth of the item.",
       "anyOf": [
         {
-          "$ref": "Distance.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Distance.json#/$defs/possibleRef"
         }
       ]
     },
@@ -167,10 +167,10 @@
       "description": "The height of the item.",
       "anyOf": [
         {
-          "$ref": "Distance.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Distance.json#/$defs/possibleRef"
         }
       ]
     },
@@ -179,10 +179,10 @@
       "description": "The width of the item.",
       "anyOf": [
         {
-          "$ref": "Distance.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Distance.json#/$defs/possibleRef"
         }
       ]
     }

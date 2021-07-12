@@ -7,6 +7,11 @@
     "type": "application/json;profile=https://schema.org/SeekToAction"
   },
   "type": "object",
+  "properties": {
+    "startOffset": {
+      "$ref": "#/$defs/startOffset"
+    }
+  },
   "$defs": {
     "arrayOfSeekToActions": {
       "type": "array",
@@ -48,6 +53,18 @@
           "items": {
             "$ref": "#/$defs/possibleRef"
           }
+        }
+      ]
+    },
+    "startOffset": {
+      "title": "Start Offset",
+      "description": "The start time of the clip expressed as the number of seconds from the beginning of the work.",
+      "anyOf": [
+        {
+          "$ref": "HyperTocEntry.json#/$defs/possibleRef"
+        },
+        {
+          "type": "number"
         }
       ]
     }

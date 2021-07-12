@@ -76,7 +76,7 @@
     },
     "member": {
       "title": "Member",
-      "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.\n                 Supersedes \n                \n    \n    \n    members, \n                \n    \n    \n    musicGroupMember.\n                \n                Inverse property: \n    \n    \n    memberOf",
+      "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.\n                 Supersedes \n                \n    \n    \n    musicGroupMember, \n                \n    \n    \n    members.\n                \n                Inverse property: \n    \n    \n    memberOf",
       "anyOf": [
         {
           "$ref": "Person.json#/$defs/possibleRef"

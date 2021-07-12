@@ -401,10 +401,10 @@
           "$ref": "Place.json#/$defs/possibleRef"
         },
         {
-          "type": "string"
+          "$ref": "GeoShape.json#/$defs/possibleRef"
         },
         {
-          "$ref": "GeoShape.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
           "$ref": "AdministrativeArea.json#/$defs/possibleRef"
@@ -421,10 +421,10 @@
       "description": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
       "anyOf": [
         {
-          "$ref": "Brand.json#/$defs/possibleRef"
+          "$ref": "Organization.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Organization.json#/$defs/possibleRef"
+          "$ref": "Brand.json#/$defs/possibleRef"
         }
       ]
     },
@@ -572,13 +572,13 @@
       "description": "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
       "anyOf": [
         {
-          "$ref": "Place.json#/$defs/possibleRef"
+          "$ref": "VirtualLocation.json#/$defs/possibleRef"
         },
         {
           "$ref": "PostalAddress.json#/$defs/possibleRef"
         },
         {
-          "$ref": "VirtualLocation.json#/$defs/possibleRef"
+          "$ref": "Place.json#/$defs/possibleRef"
         },
         {
           "type": "string"
@@ -590,17 +590,17 @@
       "description": "An associated logo.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "ImageObject.json#/$defs/possibleRef"
         },
         {
-          "$ref": "ImageObject.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         }
       ]
     },
     "member": {
       "title": "Member",
-      "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.\n                 Supersedes \n                \n    \n    \n    members, \n                \n    \n    \n    musicGroupMember.\n                \n                Inverse property: \n    \n    \n    memberOf",
+      "description": "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.\n                 Supersedes \n                \n    \n    \n    musicGroupMember, \n                \n    \n    \n    members.\n                \n                Inverse property: \n    \n    \n    memberOf",
       "anyOf": [
         {
           "$ref": "Person.json#/$defs/possibleRef"
@@ -615,10 +615,10 @@
       "description": "An Organization (or ProgramMembership) to which this Person or Organization belongs.\n                \n                \n                Inverse property: \n    \n    \n    member",
       "anyOf": [
         {
-          "$ref": "ProgramMembership.json#/$defs/possibleRef"
+          "$ref": "Organization.json#/$defs/possibleRef"
         },
         {
-          "$ref": "Organization.json#/$defs/possibleRef"
+          "$ref": "ProgramMembership.json#/$defs/possibleRef"
         }
       ]
     },

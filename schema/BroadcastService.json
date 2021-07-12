@@ -96,10 +96,10 @@
       "description": "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
       "anyOf": [
         {
-          "$ref": "BroadcastFrequencySpecification.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "BroadcastFrequencySpecification.json#/$defs/possibleRef"
         }
       ]
     },
@@ -118,10 +118,10 @@
       "description": "The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage.\n                 Supersedes \n                \n    \n    \n    language.",
       "anyOf": [
         {
-          "$ref": "Language.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "Language.json#/$defs/possibleRef"
         }
       ]
     },

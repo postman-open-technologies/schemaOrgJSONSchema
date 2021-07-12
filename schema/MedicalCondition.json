@@ -112,13 +112,13 @@
       "description": "The anatomy of the underlying organ system or structures associated with this entity.",
       "anyOf": [
         {
-          "$ref": "AnatomicalSystem.json#/$defs/possibleRef"
-        },
-        {
           "$ref": "AnatomicalStructure.json#/$defs/possibleRef"
         },
         {
           "$ref": "SuperficialAnatomy.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "AnatomicalSystem.json#/$defs/possibleRef"
         }
       ]
     },

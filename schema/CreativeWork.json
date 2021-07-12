@@ -78,6 +78,19 @@
         "$ref": "#/$defs/alternativeHeadline"
       }
     },
+    "archivedAt": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/archivedAt"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/archivedAt"
+          }
+        }
+      ]
+    },
     "assesses": {
       "$ref": "#/$defs/assesses"
     },
@@ -190,6 +203,9 @@
         }
       ]
     },
+    "countryOfOrigin": {
+      "$ref": "Country.json#/$defs/possibleRef"
+    },
     "creativeWorkStatus": {
       "$ref": "#/$defs/creativeWorkStatus"
     },
@@ -295,6 +311,19 @@
     },
     "interactivityType": {
       "$ref": "#/$defs/interactivityType"
+    },
+    "interpretedAsClaim": {
+      "oneOf": [
+        {
+          "$ref": "Claim.json#/$defs/possibleRef"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "Claim.json#/$defs/possibleRef"
+          }
+        }
+      ]
     },
     "isAccessibleForFree": {
       "type": "array",
@@ -642,6 +671,19 @@
       "description": "A secondary title of the CreativeWork.",
       "type": "string"
     },
+    "archivedAt": {
+      "title": "Archived At",
+      "description": "Indicates a page or other link involved in archival of a CreativeWork. In the case of MediaReview, the items in a MediaReviewItem may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content.",
+      "anyOf": [
+        {
+          "type": "string",
+          "format": "uri"
+        },
+        {
+          "$ref": "WebPage.json#/$defs/possibleRef"
+        }
+      ]
+    },
     "assesses": {
       "title": "Assesses",
       "description": "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
@@ -811,11 +853,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     },
@@ -825,11 +867,11 @@
       "anyOf": [
         {
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         {
           "type": "string",
-          "format": "date-time"
+          "format": "date"
         }
       ]
     },
@@ -865,11 +907,11 @@
       "description": "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "DefinedTerm.json#/$defs/possibleRef"
         },
         {
-          "$ref": "DefinedTerm.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         },
         {
           "type": "string"
@@ -942,10 +984,10 @@
       "description": "The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage.\n                 Supersedes \n                \n    \n    \n    language.",
       "anyOf": [
         {
-          "$ref": "Language.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "Language.json#/$defs/possibleRef"
         }
       ]
     },
@@ -1051,11 +1093,11 @@
       "description": "A material that something is made from, e.g. leather, wool, cotton, paper.",
       "anyOf": [
         {
-          "$ref": "Product.json#/$defs/possibleRef"
-        },
-        {
           "type": "string",
           "format": "uri"
+        },
+        {
+          "$ref": "Product.json#/$defs/possibleRef"
         },
         {
           "type": "string"
@@ -1103,10 +1145,10 @@
       "description": "The position of an item in a series or sequence of items.",
       "anyOf": [
         {
-          "type": "string"
+          "type": "integer"
         },
         {
-          "type": "integer"
+          "type": "string"
         }
       ]
     },
@@ -1214,10 +1256,10 @@
           "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "SizeSpecification.json#/$defs/possibleRef"
+          "type": "string"
         },
         {
-          "type": "string"
+          "$ref": "SizeSpecification.json#/$defs/possibleRef"
         }
       ]
     },

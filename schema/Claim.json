@@ -21,6 +21,19 @@
         }
       ]
     },
+    "claimInterpreter": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/claimInterpreter"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/claimInterpreter"
+          }
+        }
+      ]
+    },
     "firstAppearance": {
       "oneOf": [
         {
@@ -76,6 +89,18 @@
           "items": {
             "$ref": "#/$defs/possibleRef"
           }
+        }
+      ]
+    },
+    "claimInterpreter": {
+      "title": "Claim Interpreter",
+      "description": "For a Claim interpreted from MediaObject content\n    sed to indicate a claim contained, implied or refined from the content of a MediaObject.",
+      "anyOf": [
+        {
+          "$ref": "Organization.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "Person.json#/$defs/possibleRef"
         }
       ]
     }

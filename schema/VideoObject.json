@@ -17,6 +17,19 @@
     "director": {
       "$ref": "Person.json#/$defs/possibleRef"
     },
+    "embeddedTextCaption": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/embeddedTextCaption"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/embeddedTextCaption"
+          }
+        }
+      ]
+    },
     "musicBy": {
       "$ref": "#/$defs/musicBy"
     },
@@ -88,6 +101,11 @@
           "type": "string"
         }
       ]
+    },
+    "embeddedTextCaption": {
+      "title": "Embedded Text Caption",
+      "description": "Represents textual captioning from a MediaObject, e.g. text of a 'meme'.",
+      "type": "string"
     },
     "musicBy": {
       "title": "Music by",

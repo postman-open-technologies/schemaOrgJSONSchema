@@ -79,11 +79,11 @@
       "description": "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
       "anyOf": [
         {
-          "type": "string",
-          "format": "uri"
+          "$ref": "DefinedTerm.json#/$defs/possibleRef"
         },
         {
-          "$ref": "DefinedTerm.json#/$defs/possibleRef"
+          "type": "string",
+          "format": "uri"
         },
         {
           "type": "string"

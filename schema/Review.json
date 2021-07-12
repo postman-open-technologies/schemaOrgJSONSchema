@@ -8,8 +8,43 @@
   },
   "type": "object",
   "properties": {
+    "associatedClaimReview": {
+      "$ref": "Review.json#/$defs/possibleRefArray"
+    },
+    "associatedMediaReview": {
+      "$ref": "Review.json#/$defs/possibleRefArray"
+    },
+    "associatedReview": {
+      "$ref": "Review.json#/$defs/possibleRefArray"
+    },
     "itemReviewed": {
       "$ref": "Thing.json#/$defs/possibleRef"
+    },
+    "negativeNotes": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/negativeNotes"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/negativeNotes"
+          }
+        }
+      ]
+    },
+    "positiveNotes": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/positiveNotes"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/positiveNotes"
+          }
+        }
+      ]
     },
     "reviewAspect": {
       "oneOf": [
@@ -72,6 +107,42 @@
           "items": {
             "$ref": "#/$defs/possibleRef"
           }
+        }
+      ]
+    },
+    "negativeNotes": {
+      "title": "Negative Notes",
+      "description": "Indicates, in the context of a Review (e.g. framed as 'pro' vs 'con' considerations), negative considerations - either as unstructured text, or a list.",
+      "anyOf": [
+        {
+          "$ref": "ItemList.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "ListItem.json#/$defs/possibleRef"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "WebContent.json#/$defs/possibleRef"
+        }
+      ]
+    },
+    "positiveNotes": {
+      "title": "Positive Notes",
+      "description": "Indicates, in the context of a Review (e.g. framed as 'pro' vs 'con' considerations), positive considerations - either as unstructured text, or a list.",
+      "anyOf": [
+        {
+          "$ref": "ItemList.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "ListItem.json#/$defs/possibleRef"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "$ref": "WebContent.json#/$defs/possibleRef"
         }
       ]
     },

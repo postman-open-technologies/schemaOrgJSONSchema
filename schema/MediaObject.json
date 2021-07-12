@@ -43,6 +43,19 @@
     "ineligibleRegion": {
       "$ref": "#/$defs/ineligibleRegion"
     },
+    "interpretedAsClaim": {
+      "oneOf": [
+        {
+          "$ref": "Claim.json#/$defs/possibleRef"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "Claim.json#/$defs/possibleRef"
+          }
+        }
+      ]
+    },
     "playerType": {
       "type": "array",
       "items": {
@@ -57,6 +70,9 @@
     },
     "requiresSubscription": {
       "$ref": "#/$defs/requiresSubscription"
+    },
+    "sha256": {
+      "$ref": "#/$defs/sha256"
     },
     "startTime": {
       "$ref": "#/$defs/startTime"
@@ -164,10 +180,10 @@
       "description": "The height of the item.",
       "anyOf": [
         {
-          "$ref": "Distance.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Distance.json#/$defs/possibleRef"
         }
       ]
     },
@@ -203,6 +219,11 @@
         }
       ]
     },
+    "sha256": {
+      "title": "Sha256",
+      "description": "The SHA-2 SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'",
+      "type": "string"
+    },
     "startTime": {
       "title": "Start Time",
       "description": "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
@@ -228,10 +249,10 @@
       "description": "The width of the item.",
       "anyOf": [
         {
-          "$ref": "Distance.json#/$defs/possibleRef"
+          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
         },
         {
-          "$ref": "QuantitativeValue.json#/$defs/possibleRef"
+          "$ref": "Distance.json#/$defs/possibleRef"
         }
       ]
     }

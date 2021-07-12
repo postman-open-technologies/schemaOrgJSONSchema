@@ -9,7 +9,10 @@
   "type": "object",
   "properties": {
     "buyer": {
-      "$ref": "Person.json#/$defs/possibleRefArray"
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/buyer"
+      }
     }
   },
   "$defs": {
@@ -53,6 +56,18 @@
           "items": {
             "$ref": "#/$defs/possibleRef"
           }
+        }
+      ]
+    },
+    "buyer": {
+      "title": "Buyer",
+      "description": "A sub property of participant. The participant/person/organization that bought the object.",
+      "anyOf": [
+        {
+          "$ref": "Organization.json#/$defs/possibleRef"
+        },
+        {
+          "$ref": "Person.json#/$defs/possibleRef"
         }
       ]
     }
