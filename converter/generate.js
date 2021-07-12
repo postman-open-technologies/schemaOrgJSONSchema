@@ -1,4 +1,4 @@
-const OUTPUT_DIR = "schema.org";
+const OUTPUT_DIR = "../schema";
 const OUTPUT_SUFFIX = ".json";
 const URL_PREFIX = 'https://schema.org/';
 const URL_SUFFIX = '.json';

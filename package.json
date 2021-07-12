@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/postman-open-technologies/schemaOrgJSONSchema/issues"
   },
-  "homepage": "https://github.com/postman-open-technologies/schemaOrgJSONSchema#readme"
+  "homepage": "https://github.com/postman-open-technologies/schemaOrgJSONSchema#readme",
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  }
 }

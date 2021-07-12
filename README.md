@@ -6,7 +6,8 @@ This repository includes a canonical plain-JSON serialisation for each of the sc
 
 ### Schema.Org version
 
-* `12.0`
+* `13.0`
+* Previous versions, from `12.0`, see [GitHub tags](https://github.com/postman-open-technologies/schemaOrgJSONSchema/releases) or install a specific version from npm
 
 ## Usage:
 
