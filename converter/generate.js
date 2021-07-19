@@ -62,16 +62,19 @@ async function convert(localFile) {
     }
     if (schema.enum.length == 0) {
       delete schema.enum;
-    }    
+    }
     if (schema.type.length == 0) {
       delete schema.type;
-    }    
+    }
+    if (schema.type.length == 1) {
+      schema.type = schema.type[0];
+    }
     if (schema.allOf.length == 0) {
       delete schema.allOf;
     }    
     if (schema.links.length == 0) {
       delete schema.links;
-    }    
+    }
     if (Object.keys(schema.properties).length == 0) {
       delete schema.properties;
       if (schema.type == 'object' && schema.allOf) {
@@ -140,9 +143,12 @@ async function convert(localFile) {
           }
         ]
       };
-      schema.allOf = spec.supertypes.map(function (supertype) {
-        return {"$ref": supertype + URL_SUFFIX};
+      schema.allOf = spec.supertypes.map(function (supertypes) {
+        return { "$ref": supertype + URL_SUFFIX };
       });
+      if (spec.ancestors.length) {
+        schema.allOf.push({ $ref: spec.ancestors.pop() + URL_SUFFIX });
+      }
       spec.specific_properties.forEach(function (key) {
         if (key === 'array' || key === 'possibleRef' || key === 'possibleRefArray') {
           throw new Error('Not allowed key: ' + key);
