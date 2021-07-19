@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/UnofficialLegalValue"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "LegalValueLevel.json"
+    }
+  ],
   "$defs": {
     "arrayOfUnofficialLegalValues": {
       "type": "array",

@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/USNonprofitType"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "NonprofitType.json"
+    }
+  ],
   "$defs": {
     "arrayOfUSNonprofitTypes": {
       "type": "array",

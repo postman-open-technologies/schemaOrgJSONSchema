@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/SubscribeAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "InteractAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfSubscribeActions": {
       "type": "array",

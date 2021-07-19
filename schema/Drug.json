@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Drug"
   },
+  "allOf": [
+    {
+      "$ref": "Substance.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "activeIngredient": {

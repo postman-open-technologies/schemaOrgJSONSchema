@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/PreSale"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ItemAvailability.json"
+    }
+  ],
   "$defs": {
     "arrayOfPreSales": {
       "type": "array",

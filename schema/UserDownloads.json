@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/UserDownloads"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "UserInteraction.json"
+    }
+  ],
   "$defs": {
     "arrayOfUserDownloadss": {
       "type": "array",

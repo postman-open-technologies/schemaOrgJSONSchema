@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/MerchantReturnEnumeration"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Enumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfMerchantReturnEnumerations": {
       "type": "array",

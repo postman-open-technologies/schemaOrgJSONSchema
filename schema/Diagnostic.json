@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Diagnostic"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalDevicePurpose.json"
+    }
+  ],
   "$defs": {
     "arrayOfDiagnostics": {
       "type": "array",

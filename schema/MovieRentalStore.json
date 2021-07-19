@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/MovieRentalStore"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Place.json"
+    }
+  ],
   "$defs": {
     "arrayOfMovieRentalStores": {
       "type": "array",

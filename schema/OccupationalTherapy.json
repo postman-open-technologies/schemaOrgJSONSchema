@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/OccupationalTherapy"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalTherapy.json"
+    }
+  ],
   "$defs": {
     "arrayOfOccupationalTherapys": {
       "type": "array",

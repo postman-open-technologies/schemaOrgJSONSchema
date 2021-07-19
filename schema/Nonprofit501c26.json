@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Nonprofit501c26"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "USNonprofitType.json"
+    }
+  ],
   "$defs": {
     "arrayOfNonprofit501c26s": {
       "type": "array",

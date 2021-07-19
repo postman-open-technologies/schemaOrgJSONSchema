@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Sculpture"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "CreativeWork.json"
+    }
+  ],
   "$defs": {
     "arrayOfSculptures": {
       "type": "array",

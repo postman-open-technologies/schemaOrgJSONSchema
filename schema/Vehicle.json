@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Vehicle"
   },
+  "allOf": [
+    {
+      "$ref": "Product.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "accelerationTime": {

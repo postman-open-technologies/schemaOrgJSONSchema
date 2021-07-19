@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/RandomizedTrial"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalTrialDesign.json"
+    }
+  ],
   "$defs": {
     "arrayOfRandomizedTrials": {
       "type": "array",

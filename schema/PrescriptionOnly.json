@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/PrescriptionOnly"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "DrugPrescriptionStatus.json"
+    }
+  ],
   "$defs": {
     "arrayOfPrescriptionOnlys": {
       "type": "array",

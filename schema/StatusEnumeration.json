@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/StatusEnumeration"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Enumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfStatusEnumerations": {
       "type": "array",

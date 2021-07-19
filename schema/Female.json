@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Female"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "GenderType.json"
+    }
+  ],
   "$defs": {
     "arrayOfFemales": {
       "type": "array",

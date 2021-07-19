@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/EUEnergyEfficiencyCategoryA3Plus"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "EUEnergyEfficiencyEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfEUEnergyEfficiencyCategoryA3Pluss": {
       "type": "array",

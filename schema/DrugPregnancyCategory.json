@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/DrugPregnancyCategory"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfDrugPregnancyCategorys": {
       "type": "array",

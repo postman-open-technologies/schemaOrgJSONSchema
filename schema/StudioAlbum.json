@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/StudioAlbum"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MusicAlbumProductionType.json"
+    }
+  ],
   "$defs": {
     "arrayOfStudioAlbums": {
       "type": "array",

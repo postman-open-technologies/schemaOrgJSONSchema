@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/UserPlusOnes"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "UserInteraction.json"
+    }
+  ],
   "$defs": {
     "arrayOfUserPlusOness": {
       "type": "array",

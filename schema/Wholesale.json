@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Wholesale"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "DrugCostCategory.json"
+    }
+  ],
   "$defs": {
     "arrayOfWholesales": {
       "type": "array",

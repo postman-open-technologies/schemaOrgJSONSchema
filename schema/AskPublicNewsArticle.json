@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/AskPublicNewsArticle"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "NewsArticle.json"
+    }
+  ],
   "$defs": {
     "arrayOfAskPublicNewsArticles": {
       "type": "array",

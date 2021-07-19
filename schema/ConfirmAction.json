@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ConfirmAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "InformAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfConfirmActions": {
       "type": "array",

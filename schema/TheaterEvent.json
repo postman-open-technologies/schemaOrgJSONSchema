@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/TheaterEvent"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Event.json"
+    }
+  ],
   "$defs": {
     "arrayOfTheaterEvents": {
       "type": "array",

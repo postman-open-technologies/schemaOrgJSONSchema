@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/NoteDigitalDocument"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "DigitalDocument.json"
+    }
+  ],
   "$defs": {
     "arrayOfNoteDigitalDocuments": {
       "type": "array",

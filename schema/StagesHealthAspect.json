@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/StagesHealthAspect"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "HealthAspectEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfStagesHealthAspects": {
       "type": "array",

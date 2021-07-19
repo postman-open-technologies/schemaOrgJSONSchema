@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Hotel"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Place.json"
+    }
+  ],
   "$defs": {
     "arrayOfHotels": {
       "type": "array",

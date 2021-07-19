@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/BenefitsHealthAspect"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "HealthAspectEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfBenefitsHealthAspects": {
       "type": "array",

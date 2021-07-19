@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/HinduDiet"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "RestrictedDiet.json"
+    }
+  ],
   "$defs": {
     "arrayOfHinduDiets": {
       "type": "array",

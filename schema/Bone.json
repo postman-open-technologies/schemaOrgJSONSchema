@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Bone"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "AnatomicalStructure.json"
+    }
+  ],
   "$defs": {
     "arrayOfBones": {
       "type": "array",

@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/DrivingSchoolVehicleUsage"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "CarUsageType.json"
+    }
+  ],
   "$defs": {
     "arrayOfDrivingSchoolVehicleUsages": {
       "type": "array",

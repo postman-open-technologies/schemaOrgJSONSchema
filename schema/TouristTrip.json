@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/TouristTrip"
   },
+  "allOf": [
+    {
+      "$ref": "Trip.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "touristType": {

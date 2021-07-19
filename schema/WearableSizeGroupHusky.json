@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/WearableSizeGroupHusky"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "WearableSizeGroupEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfWearableSizeGroupHuskys": {
       "type": "array",

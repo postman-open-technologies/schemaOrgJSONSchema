@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/InStock"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ItemAvailability.json"
+    }
+  ],
   "$defs": {
     "arrayOfInStocks": {
       "type": "array",

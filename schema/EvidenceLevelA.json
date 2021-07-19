@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/EvidenceLevelA"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalEvidenceLevel.json"
+    }
+  ],
   "$defs": {
     "arrayOfEvidenceLevelAs": {
       "type": "array",

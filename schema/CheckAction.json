@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/CheckAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "FindAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfCheckActions": {
       "type": "array",

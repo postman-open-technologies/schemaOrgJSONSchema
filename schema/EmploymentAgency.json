@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/EmploymentAgency"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Place.json"
+    }
+  ],
   "$defs": {
     "arrayOfEmploymentAgencys": {
       "type": "array",

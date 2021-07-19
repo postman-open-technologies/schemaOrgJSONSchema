@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/RefurbishedCondition"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "OfferItemCondition.json"
+    }
+  ],
   "$defs": {
     "arrayOfRefurbishedConditions": {
       "type": "array",

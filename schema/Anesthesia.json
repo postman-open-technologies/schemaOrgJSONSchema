@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Anesthesia"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Specialty.json"
+    }
+  ],
   "$defs": {
     "arrayOfAnesthesias": {
       "type": "array",

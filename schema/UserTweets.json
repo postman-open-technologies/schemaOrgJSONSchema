@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/UserTweets"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "UserInteraction.json"
+    }
+  ],
   "$defs": {
     "arrayOfUserTweetss": {
       "type": "array",

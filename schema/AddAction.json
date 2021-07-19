@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/AddAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "UpdateAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfAddActions": {
       "type": "array",

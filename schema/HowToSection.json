@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/HowToSection"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ListItem.json"
+    }
+  ],
   "$defs": {
     "arrayOfHowToSections": {
       "type": "array",

@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/RadioBroadcastService"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "BroadcastService.json"
+    }
+  ],
   "$defs": {
     "arrayOfRadioBroadcastServices": {
       "type": "array",

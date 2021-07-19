@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Online"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "GameServerStatus.json"
+    }
+  ],
   "$defs": {
     "arrayOfOnlines": {
       "type": "array",

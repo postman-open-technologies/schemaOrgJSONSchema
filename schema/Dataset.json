@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Dataset"
   },
+  "allOf": [
+    {
+      "$ref": "CreativeWork.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "distribution": {

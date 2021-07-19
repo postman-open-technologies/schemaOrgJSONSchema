@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/LodgingReservation"
   },
+  "allOf": [
+    {
+      "$ref": "Reservation.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "checkinTime": {

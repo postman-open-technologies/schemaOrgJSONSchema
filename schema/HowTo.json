@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/HowTo"
   },
+  "allOf": [
+    {
+      "$ref": "CreativeWork.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "estimatedCost": {

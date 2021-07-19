@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Neurologic"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Specialty.json"
+    }
+  ],
   "$defs": {
     "arrayOfNeurologics": {
       "type": "array",

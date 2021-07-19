@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/WearAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "UseAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfWearActions": {
       "type": "array",

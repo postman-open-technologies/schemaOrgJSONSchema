@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Endocrine"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Specialty.json"
+    }
+  ],
   "$defs": {
     "arrayOfEndocrines": {
       "type": "array",

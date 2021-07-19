@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/SpokenWordAlbum"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MusicAlbumProductionType.json"
+    }
+  ],
   "$defs": {
     "arrayOfSpokenWordAlbums": {
       "type": "array",

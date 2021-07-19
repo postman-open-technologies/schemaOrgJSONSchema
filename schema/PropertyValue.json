@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/PropertyValue"
   },
+  "allOf": [
+    {
+      "$ref": "StructuredValue.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "maxValue": {

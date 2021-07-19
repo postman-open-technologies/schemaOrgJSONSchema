@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/VoteAction"
   },
+  "allOf": [
+    {
+      "$ref": "ChooseAction.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "candidate": {

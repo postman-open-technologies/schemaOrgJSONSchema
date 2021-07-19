@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Crematorium"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "CivicStructure.json"
+    }
+  ],
   "$defs": {
     "arrayOfCrematoriums": {
       "type": "array",

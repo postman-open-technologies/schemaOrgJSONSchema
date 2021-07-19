@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/MedicalObservationalStudy"
   },
+  "allOf": [
+    {
+      "$ref": "MedicalStudy.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "studyDesign": {

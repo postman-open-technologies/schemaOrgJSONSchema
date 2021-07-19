@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Periodical"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Series.json"
+    }
+  ],
   "$defs": {
     "arrayOfPeriodicals": {
       "type": "array",

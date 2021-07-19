@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/WearableMeasurementLength"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "WearableMeasurementTypeEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfWearableMeasurementLengths": {
       "type": "array",

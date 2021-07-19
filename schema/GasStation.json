@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/GasStation"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Place.json"
+    }
+  ],
   "$defs": {
     "arrayOfGasStations": {
       "type": "array",

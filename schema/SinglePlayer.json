@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/SinglePlayer"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "GamePlayMode.json"
+    }
+  ],
   "$defs": {
     "arrayOfSinglePlayers": {
       "type": "array",

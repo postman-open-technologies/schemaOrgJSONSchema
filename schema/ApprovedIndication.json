@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ApprovedIndication"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "MedicalIndication.json"
+    }
+  ],
   "$defs": {
     "arrayOfApprovedIndications": {
       "type": "array",

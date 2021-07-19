@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ImageObjectSnapshot"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ImageObject.json"
+    }
+  ],
   "$defs": {
     "arrayOfImageObjectSnapshots": {
       "type": "array",

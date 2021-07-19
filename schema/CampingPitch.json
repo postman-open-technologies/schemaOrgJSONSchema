@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/CampingPitch"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Accommodation.json"
+    }
+  ],
   "$defs": {
     "arrayOfCampingPitchs": {
       "type": "array",

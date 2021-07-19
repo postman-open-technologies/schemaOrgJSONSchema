@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/BedType"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "QualitativeValue.json"
+    }
+  ],
   "$defs": {
     "arrayOfBedTypes": {
       "type": "array",

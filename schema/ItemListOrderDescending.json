@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ItemListOrderDescending"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ItemListOrderType.json"
+    }
+  ],
   "$defs": {
     "arrayOfItemListOrderDescendings": {
       "type": "array",

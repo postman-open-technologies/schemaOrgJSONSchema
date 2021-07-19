@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/BodyMeasurementChest"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "BodyMeasurementTypeEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfBodyMeasurementChests": {
       "type": "array",

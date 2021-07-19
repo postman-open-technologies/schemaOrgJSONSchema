@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/EatAction"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "ConsumeAction.json"
+    }
+  ],
   "$defs": {
     "arrayOfEatActions": {
       "type": "array",

@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/WearableSizeSystemUK"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "WearableSizeSystemEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfWearableSizeSystemUKs": {
       "type": "array",

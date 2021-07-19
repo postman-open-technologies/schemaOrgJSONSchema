@@ -6,6 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/Joint"
   },
+  "allOf": [
+    {
+      "$ref": "AnatomicalStructure.json"
+    }
+  ],
   "type": "object",
   "properties": {
     "biomechnicalClass": {

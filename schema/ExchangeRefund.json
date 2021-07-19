@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ExchangeRefund"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "RefundTypeEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfExchangeRefunds": {
       "type": "array",

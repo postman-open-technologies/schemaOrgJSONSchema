@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/SizeSystemMetric"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "SizeSystemEnumeration.json"
+    }
+  ],
   "$defs": {
     "arrayOfSizeSystemMetrics": {
       "type": "array",

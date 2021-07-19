@@ -6,7 +6,11 @@
   "media": {
     "type": "application/json;profile=https://schema.org/ElementarySchool"
   },
-  "type": "object",
+  "allOf": [
+    {
+      "$ref": "Organization.json"
+    }
+  ],
   "$defs": {
     "arrayOfElementarySchools": {
       "type": "array",
